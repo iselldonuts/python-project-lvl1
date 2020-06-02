@@ -4,4 +4,9 @@ install:
 lint:
 	@poetry run flake8 brain_games
 
-.PHONY: install lint
+selfcheck:
+	poetry check
+
+check: selfcheck lint
+
+.PHONY: install lint selfcheck check

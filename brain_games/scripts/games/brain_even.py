@@ -14,7 +14,7 @@ def get_question_data():
 
 
 def main():
-    description = 'Answer "yes" if number even otherwise answer "no",'
+    description = 'Answer "yes" if number even otherwise answer "no".'
     start(description, get_question_data)
 
 

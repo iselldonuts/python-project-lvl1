@@ -1,34 +1,23 @@
 #!/usr/bin/env python3
-import random
 import prompt
 
-LOWER_BOUND = 0
-UPPER_BOUND = 10000
+VICTORY_SCORE = 3
 
 
-def generate_number():
-    return random.randint(LOWER_BOUND, UPPER_BOUND)
-
-
-def get_correct_answer(number):
-    return 'yes' if number % 2 == 0 else 'no'
-
-
-def main():
+def start(description, get_current_question_data):
     print('Welcome to the Brain Games!')
-    print('Answer "yes" if number even otherwise answer "no".\n')
+    print(description)
+    print()
 
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name.capitalize()}!\n')
 
-    number = generate_number()
     score = 0
-
-    while score < 3:
-        print(f'Question: {number}')
+    while score < VICTORY_SCORE:
+        question, correct_answer = get_current_question_data()
+        print(f'Question: {question}')
 
         answer = prompt.string('Your answer: ')
-        correct_answer = get_correct_answer(number)
 
         if answer == correct_answer:
             print('Correct!')
@@ -39,10 +28,4 @@ def main():
             print(f"Let's try again, {name}")
             return
 
-        number = generate_number()
-
     print(f'Congratulations, {name}!')
-
-
-if __name__ == '__main__':
-    main()

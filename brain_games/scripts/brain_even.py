@@ -10,8 +10,8 @@ def generate_number():
     return random.randint(LOWER_BOUND, UPPER_BOUND)
 
 
-def get_correct_answer(question):
-    return 'yes' if question % 2 == 0 else 'no'
+def get_correct_answer(number):
+    return 'yes' if number % 2 == 0 else 'no'
 
 
 def main():
@@ -36,7 +36,7 @@ def main():
         else:
             print(f'"{answer}" is wrong answer ;(.',
                   f'Correct answer was "{correct_answer}".')
-            print("Let's try again, Bill")
+            print(f"Let's try again, {name}")
             return
 
         number = generate_number()

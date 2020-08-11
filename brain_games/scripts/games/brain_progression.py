@@ -26,7 +26,6 @@ def get_question_data():
 
 def main():
     description = 'What number is missing in the progression?'
-    get_question_data()
     start(description, get_question_data)
 
 

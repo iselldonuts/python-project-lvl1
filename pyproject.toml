@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "iselldonuts_brain_games"
-version = "0.6.0"
+version = "0.7.0"
 description = ""
 authors = ["Valentin Khokhlov"]
 packages = [
@@ -12,6 +12,7 @@ brain-games = "brain_games.scripts.games.brain_games:main"
 brain-even = "brain_games.scripts.games.brain_even:main"
 brain-calc = "brain_games.scripts.games.brain_calc:main"
 brain-gcd = "brain_games.scripts.games.brain_gcd:main"
+brain-progression = "brain_games.scripts.games.brain_progression:main"
 
 [tool.poetry.dependencies]
 python = "^3.8"

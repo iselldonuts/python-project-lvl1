@@ -1,7 +1,13 @@
+![Logo](https://i.imgur.com/8XrTVOO.png)
+
 # Brain Games
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 [![Build Status](https://travis-ci.org/iselldonuts/python-project-lvl1.svg?branch=master)](https://travis-ci.org/iselldonuts/python-project-lvl1)
+
+A collection of cli-games for your brain.
+
+---
 
 Brain Even:
 [![asciicast](https://asciinema.org/a/EHBeEEJsJN7jED5N2ZJqg0ouT.svg)](https://asciinema.org/a/EHBeEEJsJN7jED5N2ZJqg0ouT)
@@ -17,3 +23,7 @@ Brain Progression:
 
 Brain Prime:
 [![asciicast](https://asciinema.org/a/rKfERMiqhgr3NbUYtaeEvLUXt.svg)](https://asciinema.org/a/rKfERMiqhgr3NbUYtaeEvLUXt)
+
+## License
+
+[MIT](LICENSE)
